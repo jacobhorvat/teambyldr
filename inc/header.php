@@ -2,7 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title><?php echo "Home | Team Blyder" ?></title>
+    <title><?php echo $pageTitle ?></title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
     <link rel="stylesheet" href="/css/style.css" type="text/css">
   </head>
   <body>

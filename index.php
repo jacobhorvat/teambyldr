@@ -1,4 +1,5 @@
 
+<?php $pageTitle = "Home | Team Blyder"; ?>
 
 <?php include("inc/header.php"); ?>
 

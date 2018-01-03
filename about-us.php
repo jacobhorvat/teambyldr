@@ -1,3 +1,7 @@
+
+<?php $pageTitle = "About Us | Team Blyder"; ?>
+
+
 <?php include("inc/header.php"); ?>
 
 
