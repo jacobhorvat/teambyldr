@@ -1,16 +1,20 @@
 <?php
-
-$trip_name = $_POST["trip_name"];
-$trip_location = $_POST["trip_location"];
-$trip_gear = $_POST["trip_gear"];
-
+ob_start();
+$name = $_POST["name"];
+$email = $_POST["email"];
+$details = $_POST["details"];
 
 echo "<pre>";
-$trip_body = "";
-$trip_body .= "Trip name: " . $trip_name . "\n";
-$trip_body .= "trip Location: " . $trip_location . "\n";
-$trip_body .= "trip Gear: " . $trip_gear . "\n";
-echo $trip_body;
+$email_body = "";
+$email_body .= "Name " . $name . "\n";
+$email_body .= "Email" . $email . "\n";
+$email_body .= "Details " . $details . "\n";
+echo $email_body;
 echo "</pre>";
 
- ?>
+// To Do: Send email
+header("location:thanks.php");
+ob_flush();
+ob_end_clean();
+
+?>
